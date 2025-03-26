@@ -1,0 +1,54 @@
+1) O que é um apontador/ponteiro?
+
+
+2) Qual a diferença entre memória estática x memória dinâmica?
+
+3) Conceitue Lista Linear.
+
+4) Cite algumas operações feitas sobre Listas Lineares.
+
+5) Quais são as duas formas usadas para representar Listas Lineares?
+Encadeamneto, e vetor 
+
+6) Desenhe uma Lista Linear Simplesmente Encadeada com 3 nós.
+
+7) Qual das seguintes afirmações sobre listas lineares encadeadas é verdadeira? (C)
+
+a) Os elementos são armazenados em posições de memória adjacentes.                      x
+b) O acesso a um elemento específico é feito diretamente através de um índice.          x
+c) A inserção e remoção de elementos no meio da lista são operações eficientes.         c
+d) O tamanho da lista é fixo e não pode ser alterado dinamicamente.                     x
+
+
+8) Qual é a principal vantagem de se utilizar uma lista linear encadeada em vez de uma
+lista linear contígua (array)? (C)
+
+a) O acesso a elementos específicos é mais rápido.          x             
+b) A utilização de memória é mais eficiente.                x
+c) A inserção e remoção de elementos são mais eficientes.   c
+d) A implementação é mais simples.                          x
+
+9) Em uma lista linear encadeada, como é possível identificar o último elemento da lista?  (B)
+
+a) O último elemento possui um ponteiro para o primeiro elemento da lista.                  x
+b) O último elemento possui um ponteiro para o próximo elemento, que contém um valor        c    
+nulo ou специальный.
+c) O último elemento possui um índice que indica sua posição na lista.                      x
+d) O último elemento não possui nenhuma informação que o diferencie dos demais              x
+elementos.
+
+10) Qual das seguintes operações é mais eficiente em uma lista linear encadeada do que
+em uma lista linear contígua (array)? (B)
+
+a) Acesso ao primeiro elemento da lista.                x
+b) Acesso ao último elemento da lista.                  c
+c) Inserção de um elemento no início da lista.          x
+d) Busca por um elemento específico na lista.           x
+
+11) Qual é a principal desvantagem de se utilizar uma lista linear encadeada em vez de
+uma lista linear contígua (array)?  (D)
+
+a) A utilização de memória é menos eficiente.           
+b) O acesso a elementos específicos é mais lento.       
+c) A implementação é mais complexa.                     
+d) Todas as alternativas anteriores                     c
