@@ -104,6 +104,7 @@ public class ListaSimples {
 	}
 
 
+
 	// Atividade 02 - Questão 07
 
 	public int somarValores(){
@@ -158,6 +159,31 @@ public class ListaSimples {
 
 		// Atividade 02 - Questão 10
 
+		public String primeiroTeste() {
+			No atual = this.prim.getProx();
 
+			prim = atual.getProx();
+			atual.setProx(null);
+			
+
+			return "atual: " +  atual.getInfo().getChave();
+		}
+
+		public String segundoTeste() {
+			No atual = this.prim.getProx();
+
+			atual.setProx(null);
+			
+
+			return "atual: " +  atual.getInfo().getChave();
+		}
+
+		
+		
+		// primeiro = atual.getProx();
+		// atual.setProx(null);
+
+
+		// atual.setProx(null);
 		
 }

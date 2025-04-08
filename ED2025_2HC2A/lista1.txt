@@ -41,7 +41,7 @@ elementos.
 em uma lista linear contígua (array)? (B)
 
 a) Acesso ao primeiro elemento da lista.                x
-b) Acesso ao último elemento da lista.                  c
+b) Acesso ao último elemento                                                                                                                                                         da lista.                  c
 c) Inserção de um elemento no início da lista.          x
 d) Busca por um elemento específico na lista.           x
 
