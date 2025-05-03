@@ -1,0 +1,63 @@
+
+Atividade 05 - Lista Linear Duplamente Encadeada
+
+1) Faça um método para concatenar duas listas duplamente encadeadas. A segunda lista ficará
+vazia. Inicialmente, as listas não estão vazias.
+Concatenar é juntar o final de uma lista com o começo da outra lista.
+
+2) Faça um método para partir uma lista duplamente encadeada aproximadamente ao meio. O
+método retornará a nova lista. A lista não está vazia e a quantidade de nós é um número par.
+
+3) Implemente um método que retorne o maior elemento/valor em uma lista duplamente
+encadeada, não se sabe o estado da lista.
+
+4) Implemente um método que calcule a média aritmética dos valores armazenados em uma
+lista duplamente encadeada, não se sabe o estado da lista.
+
+5) Escreva um método que retira os valores iguais a 0 (zero) em uma lista duplamente
+encadeada. Pode existir 1 ou mais valores iguais a 0. Caso não encontre nenhum valor igual a
+0, retorne uma mensagem.
+
+6) Escreva um método que retira os valores repetidos de uma lista duplamente encadeada.
+Estado inicial
+Estado final
+
+7) Os dados de um grupo de atletas foram organizados em uma lista linear duplamente
+encadeada. O campo de informação de cada elemento da lista apresenta o nome e a altura de
+um atleta. A lista está organizada em ordem alfabética de atletas. Implemente um método para
+mostrar os nomes dos atletas com altura maior que 2 metros.
+
+Resultado:
+Bruno
+Tadeu
+João
+
+8) Escreva um algoritmo que a partir de uma Lista Duplamente Encadeada denominada L1,
+identifique nesta lista todos os produtos enlatados e insira-os em uma outra Lista Duplamente
+Encadeada denominada L2. Considerações:
+
+• Este método deverá ser escrito na classe da ListaDupla.
+Unidade de Computação e Sistemas
+Disciplina Estrutura de Dados
+Profª Me. Renata Cristina Laranja Leite
+• A lista L1 não está vazia e a L2 já está instanciada e vazia, será passada por parâmetro.
+• Se o valor do campo chave for maior do que 100 são produtos enlatados.
+L1
+L2 ficará assim:
+
+9) Uma frase pode ser representada por uma lista linear duplamente encadeada, sendo que o
+campo de informação de cada nó da lista contém um único caractere. Implemente um método
+para saber a palavra que está armazenada na lista encadeada é palíndroma (São aquelas
+palavras ou frases que são iguais quando lidas de frente para trás e de trás para frente.).
+PALÍNDROMA
+
+10) Implementar um método para inserir um novo nó em uma lista duplamente encadeada
+ordenada. Alista não está vazia. O dado armazenado na lista é do tipo inteiro. Siga os passos:
+
+1º- verifique se o novo valor é menor que o valor do primeiro nó, se sim, insira o novo nó antes
+do primeiro.
+2º- verifique se o novo valor é maior que o valor do último nó, se sim, insira o novo nó depois do
+último.
+3º- se não for nenhuma das possibilidades anteriores, caminhe na lista até achar a posição
+correta para inserir o novo nó. A lista tem que permanecer ordenada depois da nova inserção.
+LISTA ORDENADA
