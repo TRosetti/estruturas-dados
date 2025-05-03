@@ -1,0 +1,40 @@
+Atividade 04 - Lista Linear Duplamente Encadeada
+
+1)
+A lista Duplamente encadeada é parecida com a lista simplesmente, com um diferencial de ter um ponteiro para o item anterior, logo ela é uma lista bi-direcional 
+
+2) 
+c) 2
+
+3)
+Simplesmente Encadeada: A lista é dividida por nós, que são armazenados na memória RAM (não seguindo uma ordem) e para ser acessada precisa de ponteiros, na lista simplesmente, cada nó possui um ponteiro para o próximo
+Lista Contigua: Na lista contigua, os dados são armazenados em uma ordem (continua) e para acessalas precisamos percorrer a lista ou ir direto via Index
+Duplamente Encadeada: Parecida com a lista Simplesmente, mas cada nó possui um ponteiro de Proximo e Anterior 
+
+4)
+(E) Os registros possuem duas variáveis ponteiros do mesmo tipo do registro, para armazenar o
+endereço do próprio registro e do próximo da Lista.
+
+5)
+(c) Facilita a navegação nos dois sentidos (para frente e para trás).
+
+
+6) Explique através de desenho como funciona a inserção de um novo nó no
+meio de uma lista duplamente encadeada com 4 elementos.
+
+
+7)
+Remove um nó da lista, e adiciona os ponteiros ao nó anterior e ao proximo (remove apenas no meio da lsita, não remove o primeiro nem o últmo)
+
+8)
+(b) O(n)
+
+9)
+Remover o ultimo item da lista 
+
+10) 
+Não afeta
+
+11) 
+A remoção de um nó exige atualizar os ponteiros dos nós anterior e seguinte.
+

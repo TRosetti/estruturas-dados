@@ -1,4 +1,5 @@
 package testeJava;
+
 import java.util.Scanner;
 
 public class PrimeiroProgramaJava {
