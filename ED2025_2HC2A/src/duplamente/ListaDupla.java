@@ -1,6 +1,7 @@
 package duplamente;
 
 import dados.Item;
+import simplesmente.No;
 
 public class ListaDupla {
     private NoDupla prim;
@@ -190,6 +191,81 @@ public class ListaDupla {
             }
             System.out.println("Maior valor: " + maior.getChave());
         }
+        
+    }
+
+
+    // Ex4
+    
+    public double calcularMedia(ListaDupla lista){
+        NoDupla atual = lista.getPrim();
+        int tamanho = lista.getQuantNos();
+        double soma = 0; // estava com int, mas o calculo da média dava erro, não mostrava a casa decimal por causa disso
+        double resultado = 0;
+        
+
+        if(lista.eVazia()){
+            return -1; 
+        }else{
+
+            for(int i = 0; i < tamanho; i++){
+                soma += atual.getInfo().getChave();
+                atual = atual.getProx();
+            }
+
+            resultado = soma/tamanho; // se um item for int, pode dar erro se tiver casa decimal 
+           // resultado = (double) soma/tamanho; // assim, se a somar for int, vai forçar a mostrar um double
+
+
+            return resultado;
+        }
+        
+    }
+    
+    public boolean retirarZero(ListaDupla lista){
+        NoDupla atual = lista.getPrim();
+        int tamanho = lista.getQuantNos();
+        int quantidadeZeros = 0;
+
+        if(eVazia()){
+            return false;
+        }            
+            
+        while (atual != null) {
+            if (atual.getInfo().getChave() == 0) {
+                NoDupla proximo = atual.getProx();
+    
+                // Caso seja o primeiro nó
+                if (atual == lista.getPrim()) {
+                    lista.setPrim(proximo);
+                    if (proximo != null) {
+                        proximo.setAnt(null);
+                    }
+                }
+                // Caso seja o último nó
+                else if (atual == lista.getUlt()) {
+                    NoDupla anterior = atual.getAnt();
+                    lista.setUlt(anterior);
+                    if (anterior != null) {
+                        anterior.setProx(null);
+                    }
+                }
+                // Caso esteja no meio
+                else {
+                    NoDupla anterior = atual.getAnt();
+                    anterior.setProx(proximo);
+                    proximo.setAnt(anterior);
+                }
+    
+                atual = proximo; // avança para o próximo
+            } else {
+                atual = atual.getProx(); // avança normalmente
+            }
+        }
+        
+
+       return true;
+
         
     }
 
