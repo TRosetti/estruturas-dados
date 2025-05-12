@@ -221,6 +221,8 @@ public class ListaDupla {
         }
         
     }
+
+    // Ex5
     
     public boolean retirarZero(ListaDupla lista){
         NoDupla atual = lista.getPrim();
