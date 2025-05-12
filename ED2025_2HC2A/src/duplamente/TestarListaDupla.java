@@ -22,7 +22,9 @@ public class TestarListaDupla {
         
         lista2.inserirUltimo(new Item(12));
         lista2.inserirUltimo(new Item(13));
+        lista2.inserirUltimo(new Item(12));
         lista2.inserirUltimo(new Item(0));
+        lista2.inserirUltimo(new Item(14));
         lista2.inserirUltimo(new Item(14));
         lista2.inserirUltimo(new Item(0));
 
@@ -40,9 +42,10 @@ public class TestarListaDupla {
 
         System.out.println(lista2.toString());
         // System.out.println(lista2.calcularMedia(lista2));
-        System.out.println(lista2.retirarZero(lista2));
+        lista2.retirarRepetidos();
         
         System.out.println(lista2.toString());
+        System.out.println(lista2.getQuantNos());
        
     }
 }

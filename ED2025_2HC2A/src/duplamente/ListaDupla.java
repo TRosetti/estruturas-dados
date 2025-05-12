@@ -1,7 +1,6 @@
 package duplamente;
 
 import dados.Item;
-import simplesmente.No;
 
 public class ListaDupla {
     private NoDupla prim;
@@ -221,11 +220,13 @@ public class ListaDupla {
         }
         
     }
+
+    // Ex5
     
     public boolean retirarZero(ListaDupla lista){
         NoDupla atual = lista.getPrim();
         int tamanho = lista.getQuantNos();
-        int quantidadeZeros = 0;
+        // precisa alterar o quantNos depois 
 
         if(eVazia()){
             return false;
@@ -269,4 +270,37 @@ public class ListaDupla {
         
     }
 
+    // Ex6
+    public void retirarRepetidos() {
+        NoDupla atual = this.prim;
+        NoDupla comparador, proximo;
+        
+    
+        while (atual != null) { 
+            comparador = atual.getProx();
+    
+            while (comparador != null) {
+                proximo = comparador.getProx();
+    
+                if (comparador.getInfo().getChave() == atual.getInfo().getChave()) {
+                    // Remover o nó comparador
+                    if (comparador == this.ult) {
+                        this.ult = comparador.getAnt();
+                        if (this.ult != null) {
+                            this.ult.setProx(null);
+                        }
+                    } else {
+                        comparador.getAnt().setProx(comparador.getProx());
+                        comparador.getProx().setAnt(comparador.getAnt());
+                    }
+                    this.quantNos--; // Atualiza o contador
+                }
+    
+                comparador = proximo;
+            }
+    
+            atual = atual.getProx();
+        }
+    }
+    
 }
