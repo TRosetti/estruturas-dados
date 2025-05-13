@@ -5,7 +5,7 @@ public class TestarPilha {
         PilhaContigChar pilha = new PilhaContigChar(1000);
         String palavra = "dado";
         String invertida;
-        invertida = pilha.inverterPalavra(palavra);
+        invertida = pilha.inverterFrase(palavra);
         System.out.println("Palavra Invertida = " + invertida);
 
         
