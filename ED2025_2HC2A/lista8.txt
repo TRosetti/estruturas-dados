@@ -1,0 +1,47 @@
+1. (Defensoria Pública do Estado do Rio de Janeiro Concurso Público 2014. (adaptada)) -
+Seja a função recursiva f definida como f (a,b)
+if (b == 0)
+    return a;
+else
+    return f (b, a % b);
+
+onde a % b é o resto da divisão de a por b. O valor de f (21, 9) é
+(A) 0 (B) 1 (C) 3 (D) 7 (E) 9
+
+f(21, 3)
+f(21, 0)
+f()
+
+_> 3
+
+
+2. (ENADE 2014 - adaptada) Qual o valor de retorno da função a seguir, caso n=27?
+
+static int recursao(int n){
+    if (n<=10){ 
+        return n*2;
+    }else{
+        return recursao(recursao (n/3));    
+    }
+}
+(A) 8. (B) 9. (C) 12. (D) 16. (E) 18
+
+_> 16
+
+3. (UFRPE) - SUGEP – UFRPE-2018) Considere a função recursiva ‘func’ definida por
+
+static int func(int n){
+    if (n==1){
+        return 1;
+    }else{
+        return (n - 1) * func(n - 1);
+    }
+}
+Qual é o valor de func(4)?
+(A) 6 (B) 24 (C) 12 (D) 1 (E) 2
+
+_> 4
+
+3 * func(3) = 2 * 2 = 4 
+2 * func(2) = 2 * 1 = 2
+1 * func(1) == 1 * 1 = 1
